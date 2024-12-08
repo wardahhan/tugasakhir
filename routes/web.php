@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TeaController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,7 @@ Route::get('/menu', [PageController::class, 'menu'])->name('menu');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/cart', [PageController::class, 'cart'])->name('cart');
 Route::get('teas/index', [TeaController::class, 'index']);
+Route::get('/menu', [MenuController::class, 'menu'])->name('menu');
 
 // Route untuk CRUD Tea
 Route::resource('teas', TeaController::class);

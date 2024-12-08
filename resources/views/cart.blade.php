@@ -80,5 +80,4 @@ function checkout() {
 
 window.onload = loadCart;
 </script>
-
 @endsection
